@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="logincss.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-card">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h2 class="Welcometext">Welcome Back</h2>
+            <h2 class="Border">__________________</h2>
+            <h3 class="logintext">Login</h3>
+
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username">
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="eye-icon" onclick="togglePassword()">
+                        <img src="eye-icon.png" id="eye-icon" alt="Show Password">
+                    </span>
+                </div>
+
+                <button type="submit">Sign In</button>
+            </form>
+
+            <p class="register-text">
+                Don't have an account? <a href="register.html">Register !!</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="loginjavascript.js"></script>
+</body>
+
+</html>

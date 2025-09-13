@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 2rem 1.2rem;
+  border-right: 1px solid #333;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 12px #00000088;
+}
+
+.sidebar h1 {
+  color: #ff5c5c;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px #ff5c5caa;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff5c5c;
+  text-shadow: 0 0 10px #ff5c5c88;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 220px;
+  padding: 3rem 4rem;
+  flex: 1;
+}
+
+/* Intro Section */
+.intro-section .text-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-section .highlight {
+  color: #ff5c5c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px #ff5c5c99;
+  margin-bottom: 1rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin: 3rem 0 2rem;
+  color: #ff5c5c;
+  text-shadow: 0 0 10px #ff5c5caa;
+  border-bottom: 1px solid #ff5c5c55;
+  padding-bottom: 0.5rem;
+}
+
+/* Contact Cards Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: rgba(34, 34, 34, 0.6);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 15px #ff5c5c55;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #ff5c5c99;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #ff5c5c;
+  font-size: 1.3rem;
+}
+
+.card p,
+.card a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.card a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  background: rgba(34, 34, 34, 0.6);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff5c5c55;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 600px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ff5c5c;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  transition: outline 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ff5c5c;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #ff5c5c;
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 0 15px #ff5c5c88;
+}
+
+.contact-form button:hover {
+  background: #ff3b3b;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #ff5c5c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 0;
+    padding: 2rem 1.5rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}

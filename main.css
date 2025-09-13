@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  height: 100vh;
+}
+
+/* Layout Fix: Missing container layout */
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 77, 90, 0.5);
+}
+.logo span {
+  color: #ff4d5a;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+}
+nav ul li {
+  margin: 1rem 0;
+}
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+nav ul li a i {
+  margin-right: 10px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: #ff4d5a;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.intro {
+  max-width: 600px;
+}
+.intro h2 {
+  font-size: 1.6rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+.intro h2 span.name {
+  color: #76ffcc;
+  font-weight: bold;
+}
+.intro h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 77, 90, 0.6);
+}
+.highlight {
+  color: #ff4d5a;
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  background: #ff4d5a;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #ff1e3c;
+  transform: scale(1.05);
+}
+
+.profile-pic img {
+  width: 270px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 77, 90, 0.5);
+}
+
+/* Footer */
+footer {
+  position: relative;
+  background: #0d0d0d;       /* solid dark background */
+  color: #aaa;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  z-index: 10;
+  /* Removed backdrop-filter and transparency */
+}
+
+footer a {
+  color: #76ffcc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .contact-info i {
+  margin-right: 8px;
+  color: #ff4d5a;
+}
+
+footer .contact-info p {
+  margin-bottom: 5px;
+}

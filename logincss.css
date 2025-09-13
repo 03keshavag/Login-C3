@@ -1,0 +1,167 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0e0e0, #c0c0c0);
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login Card */
+.login-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    width: 80px;
+    border-radius: 50%;
+    height: auto;
+    margin: 0 auto 10px auto;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* Headings */
+.Welcometext {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    color: #444;
+}
+
+.logintext {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Border line */
+.Border {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 0;
+}
+
+.Border::before {
+    content: "";
+    display: block;
+    width: 95%;
+    height: 3px;
+    background: #444;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #d0e6c4;
+    background: #e6f3e6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #88b388;
+    outline: none;
+}
+
+/* Password Field with Eye Icon */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+#password {
+    width: 100%;
+    padding: 12px;
+    padding-right: 45px; /* Space for the eye icon */
+    border: 2px solid #d0e6c4;
+    background: #e6f3e6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.eye-icon img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.eye-icon img:hover {
+    opacity: 1;
+}
+
+/* Sign In Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7f7f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff5252;
+}
+
+/* Register Text */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

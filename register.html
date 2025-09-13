@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="registercss.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <div class="register-card">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h2 class="Welcometext">Join Us Now</h2>
+            <h2 class="Border">__________________</h2>
+            <h3 class="registertext">Register</h3>
+
+            <form id="registerForm">
+                <input type="text" id="fullname" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="username" placeholder="Username">
+                
+                <!-- Password Field with Eye Icon -->
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="eye-icon" onclick="togglePassword('password', 'eye1')">
+                        <img src="eye-closed-icon.png" id="eye1" alt="Toggle Password">
+                    </span>
+                </div>
+
+                <!-- Confirm Password Field with Eye Icon -->
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <span class="eye-icon" onclick="togglePassword('confirm-password', 'eye2')">
+                        <img src="eye-closed-icon.png" id="eye2" alt="Toggle Password">
+                    </span>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p class="login-text">
+                Already have an account? <a href="loginpage.html">Login here</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="registerjavascript.js"></script>
+</body>
+</html>
