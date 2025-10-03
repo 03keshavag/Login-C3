@@ -12,7 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         window.location.href = "main.html";
         return;
     }
-    else if(username === "Hindushree" && password ==="hello123"){
+    else if(username === "HELLO" && password ==="hello123"){
         window.location.href = "main.html";
         return;
     }
